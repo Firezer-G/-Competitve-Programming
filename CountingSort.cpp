@@ -1,7 +1,9 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
 vector<int> countsort(vector<int> arr) {
+    //This function only works for negative numbers as the HackerRank question requires 
     int maxx=arr[0];
     for(int i=0;i<arr.size();i++){
         if (maxx<arr[i]) {
