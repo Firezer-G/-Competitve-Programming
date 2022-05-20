@@ -6,7 +6,8 @@ public:
     string sortSentence(string s) {
         int n=1;
         for(int i=0;i<s.size();i++){
-            if(isspace(s[i])){
+            //Determines how many words there are in the string
+		if(isspace(s[i])){
                 n++;
             }
         }
@@ -17,7 +18,7 @@ public:
 				int n;
 				n=s[i]-'0';
 				str[n-1]=word;
-                word="";                
+                		word="";                
 			}else if (!isspace(s[i])){
 				word+=s[i];   
 			}
